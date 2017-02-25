@@ -1,0 +1,54 @@
+/*
+add_filter('ppwpslack_events', 'my_custom_slack_event');
+
+function my_custom_slack_event($events){
+    $myevent = array();
+    $myevent['uniqueeventname'] = array(
+        'title'         => __('My Custom event when post published', 'your_lang_domain'), //will be shown in post edit screen
+        'hook'          => 'publish_post', //as defined by wordpress
+        'accepted_args' => 2, //
+        'priority'      => 10, //if not used then we will use 10
+        'category'      => array(
+            'section' => 'customcategory', //event category
+            'title'   => __('My Custom Tab', 'your_lang_domain')
+        ),
+        'message' => __('Hei, New post published !', 'your_lang_domain')
+    );
+
+    return array_merge($events, $myevent);
+}
+*/
+/*
+add_filter('ppwpslack_events', 'my_custom_slack_event2');
+
+function my_custom_slack_event2($events){
+    $myevent = array();
+    $myevent['uniqueeventname'] = array(
+        'title'         => __('My Custom event when post published', 'your_lang_domain'), //will be shown in post edit screen
+        'hook'          => 'publish_post', //as defined by wordpress
+        'accepted_args' => 2, //
+        'priority'      => 10, //if not used then we will use 10
+        'category'      => array(
+            'section' => 'customcategory', //event category
+            'title'   => __('My Custom Tab', 'your_lang_domain')
+        ),
+        'message'       => function ($ID, $post) {
+            $author_id    = $post->post_author;
+            $author = get_user_by( 'ID', $author_id );
+
+            $author_name = $author->display_name;
+            $author_url     = get_edit_user_link($author_id);
+
+            $title     = $post->post_title;
+            $permalink = get_permalink($ID);
+
+            $message   = sprintf(__('Post "<%s|%s>" written by User <%s|%s>', 'your_lang_domain'), $permalink, $title, $author_url, $author_name);
+
+            return $message;
+
+        }
+    );
+
+    return array_merge($events, $myevent);
+}
+*/

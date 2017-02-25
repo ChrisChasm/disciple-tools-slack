@@ -1,0 +1,52 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+h2.nav-tab-wrapper {
+    margin:22px 0 0 0;
+}
+
+#sections {
+    padding:22px;
+    background: #fff;
+    border:1px solid #ccc;
+    border-top:0px;
+}
+
+section {
+    display:none;
+}
+
+section:first-child {
+    display:block;
+}
+
+
+.no-js h2.nav-tab-wrapper {
+    display:none;
+}
+
+.no-js #sections {
+    border-top:1px solid #ccc;
+    margin-top:22px;
+}
+
+.no-js section {
+    border-top: 1px dashed #aaa;
+    margin-top:22px;
+    padding-top:22px;
+}
+
+.no-js section:first-child {
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+.cbx_no_margin{
+    margin:0px;
+    padding:0px;
+}
+.ppwpslack_ajax_icon{
+    display: none;
+}
