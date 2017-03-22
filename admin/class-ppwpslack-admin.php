@@ -393,13 +393,13 @@ class ppwpslack_Admin {
             'has_archive'         => true,
             'exclude_from_search' => true,
             'publicly_queryable'  => false,
-            'capability_type'     => 'post',
+            'capability_type'     => 'page',
         );
         register_post_type('ppwpslack', $args);
     }
 
     /**
-     * @return mixed|void
+     * @return mixed
      */
     public function ppwpslack_events_sections() {
 
@@ -720,8 +720,8 @@ class ppwpslack_Admin {
         $button_count = wp_count_posts('ppwpslack');
 
 
-        //remove add button option if already one button is created //maximum 5
-        if ($button_count->publish > 4) {
+        //remove add button option if already one button is created //maximum 15
+        if ($button_count->publish > 15) {
             do_action('ppwpslack_remove', $this);
         }
     }

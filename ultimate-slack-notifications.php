@@ -7,9 +7,9 @@
      * @package           ppwpslack
      *
      * @wordpress-plugin
-     * Plugin Name:       Disciple Tools - Ultimate Slack Notifications
+     * Plugin Name:       Disciple Tools - Slack
      * Plugin URI:        https://pluginspal.com/wordpress-plugins/ultimate-slack-notifications
-     * Description:       Notify your team members with each WordPress site activities by sending customized messages into Slack channels
+     * Description:       Disciple Tools Slack Integration. Notify your team members with each WordPress site activities by sending customized messages into Slack channels
      * Version:           1.1.0
      * Author:            PLuginsPal
      * Author URI:        
